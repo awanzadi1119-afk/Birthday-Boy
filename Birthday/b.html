@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎉 Birthday Surprise</title>
+  <link rel="stylesheet" href="b.css"/>
+</head>
+<body>
+
+  <!-- 🎂 Login Screen -->
+  <div class="login-screen" id="login-screen">
+    <h1>🎂 Enter Birthday Boy's Name</h1>
+    <input type="text" id="birthday-name" placeholder="Type name here...">
+    <button id="login-btn">Let's Celebrate 🎉</button>
+  </div>
+
+  <!-- 🎊 Main Birthday Page -->
+  <div class="birthday-page hidden" id="birthday-page">
+    <div class="lights"></div>
+    <h1 class="greeting">🎉 Happy Birthday <span id="name-display"></span> 🎉</h1>
+
+    <!-- 🎁 Surprise Buttons -->
+    <div class="surprises">
+      <button class="surprise-btn" data-target="wish1">🎁 Surprise 1</button>
+      <button class="surprise-btn" data-target="wish2">🎁 Surprise 2</button>
+      <button class="surprise-btn" data-target="wish3">🎁 Surprise 3</button>
+    </div>
+
+    <!-- 🔔 Wishes Boxes -->
+    <div class="wish-box hidden" id="wish1">
+      <p>✨ Tumhari zindagi hamesha khushiyon se bhari rahe! 🎂</p>
+    </div>
+    <div class="wish-box hidden" id="wish2">
+      <p>🎉 Aaj ka din sirf tumhara hai — enjoy every moment! 🥳</p>
+    </div>
+    <div class="wish-box hidden" id="wish3">
+      <p>🎁 Tumhari muskurahat duniya ko roshan karti hai! 💖</p>
+    </div>
+
+    <!-- 💖 Sweet Memories Button -->
+    <div class="memories-btn-section">
+      <button id="memories-btn">💖 Our Sweet Memories</button>
+    </div>
+
+    <!-- 📸 Sweet Memories Modal -->
+    <div id="sweet-memories-modal" class="overlay-modal">
+      <div class="modal-box memories-box">
+        <span class="close-modal" data-close="sweet-memories-modal">&times;</span>
+        <h2>📸 Our Sweet Memories</h2>
+        <div class="memories-container">
+          <div class="memories-column">
+            <img src="Images/sample1.jpg" alt="Memory 1">
+            <img src="Images/sample2.jpg" alt="Memory 2">
+            <img src="Images/sample3.jpg" alt="Memory 3">
+          </div>
+          <div class="memories-column">
+            <img src="Images/sample4.jpg" alt="Memory 4">
+            <img src="Images/sample5.jpg" alt="Memory 5">
+          </div>
+          <div class="memories-quote">
+            <p>
+              “Tumhari muskurahat mere liye sabse khaas hai. Har pal tumhari zindagi khushiyon se bhari rahe, 
+              aur ye din hamesha yaadgar rahe! 🎉 Tumhe duniya ki sari khushiyan milein aur tumhara har sapna pura ho.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🎶 Background Music -->
+<audio id="birthday-music" src="Music/birthday_song.mp3" loop autoplay></audio>
+    <button id="music-toggle">🔊 Music On/Off</button>
+  </div>
+
+<script src="b.js"></script>
+</body>
+</html>
